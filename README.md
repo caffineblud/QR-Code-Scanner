@@ -30,10 +30,7 @@
 
 ### Scanned Result
 
-<p align="center">
-  <img src="screenshots/scanned_qr.png" width="700">
-</p>
-
+<img src="./QR%20code%20sscanner/screenshots/scanned_qr.png" width="70%" alt="Scanned QR">
 ---
 
 ## 📂 Project Structure:
