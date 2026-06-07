@@ -1,13 +1,13 @@
 import cv2
 import os
 import csv
+import webbrowser
 from datetime import datetime
 
 # Create folders
 os.makedirs("scans", exist_ok=True)
 os.makedirs("data", exist_ok=True)
 
-# Create history file if it doesn't exist
 history_file = "data/scan_history.csv"
 
 if not os.path.exists(history_file):
@@ -20,6 +20,7 @@ cap = cv2.VideoCapture(0)
 detector = cv2.QRCodeDetector()
 
 last_scanned = ""
+opened_urls = set()
 
 while True:
 
@@ -66,6 +67,18 @@ while True:
             (255, 0, 0),
             2
         )
+
+        # Auto-open URLs
+        if (
+            data.startswith("http://")
+            or data.startswith("https://")
+        ) and data not in opened_urls:
+
+            webbrowser.open(data)
+
+            opened_urls.add(data)
+
+            print(f"Opened URL: {data}")
 
     cv2.putText(
         frame,
