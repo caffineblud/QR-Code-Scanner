@@ -1,52 +1,44 @@
-# QR Code Scanner
+# QR Code Scanner 📷
 
-*A simple real-time QR Code Scanner built with Python and OpenCV. The application uses a webcam to detect and decode QR codes, display the extracted information, and save scan results for future reference.*
+<p align="center">
+  A real-time QR Code Scanner built with <strong>Python</strong> and <strong>OpenCV</strong>.<br>
+  Detect, decode, save, and automatically open QR code URLs using your webcam.
+</p>
 
-## Features
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/OpenCV-Computer%20Vision-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge" />
+</p>
 
-* Real-time QR code detection
-* QR code decoding
-* Webcam integration
-* Save scanned QR data to text files
-* Store scan history in CSV format
-* Easy-to-use keyboard controls
+---
 
-## Technologies Used
+## ✨ Features
 
-* Python
-* OpenCV
+✔️ Real-time QR Code Detection  
+✔️ QR Code Decoding  
+✔️ Automatic URL Opening  
+✔️ Save Scanned Data to Text Files  
+✔️ Scan History Logging (CSV)  
+✔️ Webcam-Based Scanning  
+✔️ QR Boundary Highlighting  
+✔️ Simple & User-Friendly Controls  
 
-## Installation
+---
 
-1. Clone the repository:
+## 🖼️ Demo
 
-```bash
-git clone <repository-url>
-cd QR-Code-Scanner
+### QR Code Detection:
+
+### Scanned Result
+
+```md
+![Scanned Result](screenshots/scanned_qr.png)
 ```
 
-2. Install dependencies:
+---
 
-```bash
-pip install -r requirements.txt
-```
-
-## Usage
-
-Run the application:
-
-```bash
-python main.py
-```
-
-### Controls
-
-| Key | Action               |
-| --- | -------------------- |
-| S   | Save scanned QR data |
-| Q   | Quit the application |
-
-## Project Structure
+## 📂 Project Structure:
 
 ```text
 QR-Code-Scanner/
@@ -63,25 +55,115 @@ QR-Code-Scanner/
     └── scan_history.csv
 ```
 
-## Output
+---
 
-* Detected QR code data is displayed on the screen.
-* Saved scans are stored in the `scans` folder.
-* Scan history is maintained in `data/scan_history.csv`.
+## 🚀 Getting Started:
 
-## Future Enhancements
+### 1️⃣ Clone the Repository
 
-* Barcode scanning support
-* Scan QR codes from image files
-* Automatic URL opening
-* Graphical User Interface (GUI)
-* Excel export support
+```bash
+git clone <https://github.com/caffineblud/QR-Code-Scanner>
+cd QR-Code-Scanner
+```
 
-## License
+### 2️⃣ Install Dependencies
 
-This project is open source and available under the MIT License.
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ Run the Application
+
+```bash
+python main.py
+```
+
+Point your webcam toward a QR code and start scanning.
 
 ---
 
+## ⌨️ Controls
+
+| Key | Action |
+|------|---------|
+| **S** | Save scanned QR data |
+| **Q** | Quit the application |
+
+---
+
+## 📁 Output:
+
+### Saved Scan Files
+
+```text
+scans/
+├── scan_20260607_101530.txt
+├── scan_20260607_101842.txt
+```
+
+### Scan History
+
+All unique scans are automatically logged in:
+
+```text
+data/scan_history.csv
+```
+
+Example:
+
+| Timestamp | Data |
+|-----------|------|
+| 2026-06-07 10:15:30 | https://example.com |
+
+---
+
+## 🔗 Automatic URL Opening
+
+If the scanned QR code contains a URL:
+
+```text
+https://github.com/
+```
+
+The application will:
+
+- Detect the QR code
+- Decode the URL
+- Open it in your default browser
+- Store it in scan history
+
+---
+
+## 🛠️ Technologies Used:
+
+- *Python*
+- OpenCV
+- CSV Module
+- WebBrowser Module
+
+---
+
+## 💡 Future Enhancements:
+
+- Barcode Scanner Support
+- Scan QR Codes from Images
+- Export History to Excel
+- Tkinter GUI Version
+- Multiple QR Detection
+- Dark Theme Dashboard
+
+---
+
+## 📜 License
+
+This project is open-source and available under the MIT License.
+
+---
 ## Author:
 ***Yash Kumar Singh***
+
+---
+
+<p align="center">
+  ⭐ If you like this project, consider giving it a star on GitHub! ⭐
+</p>
