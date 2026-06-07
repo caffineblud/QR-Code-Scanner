@@ -26,15 +26,13 @@
 
 ---
 
-## 🖼️ Demo
-
-### QR Code Detection:
+## 🖼️ Demo:
 
 ### Scanned Result
 
-```md
-![Scanned Result](screenshots/scanned_qr.png)
-```
+<p align="center">
+  <img src="screenshots/scanned_qr.png" width="700">
+</p>
 
 ---
 
